@@ -1,0 +1,194 @@
+{
+  "experiment": "exp3a-exhaust-canvas",
+  "protocol": "exp3a-v1.2-frozen",
+  "generated": "2026-10-07T14:57:35.632Z",
+  "metric": "final_ood (mean of ood_30 + ood_45 + ood_60) — primary pre-registered metric",
+  "note": "Values are mean OOD across three rotation angles (30°, 45°, 60°). Previously mislabeled as 'OOD at 45°'. Corrected 2026-10-07 after Grok + Thoth adversarial review.",
+  "seeds": [
+    42,
+    137,
+    2357,
+    1729,
+    8191
+  ],
+  "n": 5,
+  "df": 4,
+  "t_crit_05": 2.776,
+  "reference_arm": "WHITE",
+  "arm_means": {
+    "WHITE": {
+      "mean_ood_3angle": 30.33,
+      "mean_ood_45": 30.32,
+      "mean_ood_30": 37.768,
+      "mean_ood_60": 22.902,
+      "std_3angle": 1.002
+    },
+    "PINK": {
+      "mean_ood_3angle": 28.696,
+      "mean_ood_45": 29.918,
+      "mean_ood_30": 34.78,
+      "mean_ood_60": 21.39,
+      "std_3angle": 1.437
+    },
+    "CROSS-EXHAUST": {
+      "mean_ood_3angle": 28.034,
+      "mean_ood_45": 29.398,
+      "mean_ood_30": 33.138,
+      "mean_ood_60": 21.566,
+      "std_3angle": 1.159
+    },
+    "SAME-EXHAUST": {
+      "mean_ood_3angle": 28.093,
+      "mean_ood_45": 29.174,
+      "mean_ood_30": 33.594,
+      "mean_ood_60": 21.51,
+      "std_3angle": 0.437
+    },
+    "RANDOM-LABEL-EXHAUST": {
+      "mean_ood_3angle": 28.661,
+      "mean_ood_45": 29.894,
+      "mean_ood_30": 34.308,
+      "mean_ood_60": 21.78,
+      "std_3angle": 1.126
+    },
+    "SHUFFLED-EXHAUST": {
+      "mean_ood_3angle": 29.558,
+      "mean_ood_45": 30.872,
+      "mean_ood_30": 35.478,
+      "mean_ood_60": 22.324,
+      "std_3angle": 0.945
+    },
+    "DEAD-EXHAUST": {
+      "mean_ood_3angle": 28.053,
+      "mean_ood_45": 29.512,
+      "mean_ood_30": 33.858,
+      "mean_ood_60": 20.79,
+      "std_3angle": 1.415
+    }
+  },
+  "kill_tests": {
+    "PINK": {
+      "delta_pp": -1.634,
+      "t": -3.994,
+      "ci_pp": [
+        -2.77,
+        -0.498
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "CROSS-EXHAUST": {
+      "delta_pp": -2.296,
+      "t": -6.519,
+      "ci_pp": [
+        -3.274,
+        -1.318
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "SAME-EXHAUST": {
+      "delta_pp": -2.237,
+      "t": -5.735,
+      "ci_pp": [
+        -3.32,
+        -1.154
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "RANDOM-LABEL-EXHAUST": {
+      "delta_pp": -1.669,
+      "t": -3.517,
+      "ci_pp": [
+        -2.987,
+        -0.352
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "SHUFFLED-EXHAUST": {
+      "delta_pp": -0.772,
+      "t": -3.225,
+      "ci_pp": [
+        -1.437,
+        -0.107
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "1/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "DEAD-EXHAUST": {
+      "delta_pp": -2.277,
+      "t": -2.826,
+      "ci_pp": [
+        -4.513,
+        -0.04
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "1/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    }
+  },
+  "summary": {
+    "primary_finding": "Exhaust training hurts OOD generalisation vs white noise (clean canvas). Effect confirmed on pre-registered mean OOD metric.",
+    "white_vs_cross": {
+      "delta_pp": -2.296,
+      "t": -6.519,
+      "ci_pp": [
+        -3.274,
+        -1.318
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "white_vs_same": {
+      "delta_pp": -2.237,
+      "t": -5.735,
+      "ci_pp": [
+        -3.32,
+        -1.154
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "white_vs_pink": {
+      "delta_pp": -1.634,
+      "t": -3.994,
+      "ci_pp": [
+        -2.77,
+        -0.498
+      ],
+      "df": 4,
+      "n_seeds": 5,
+      "consistent": "0/5 pos",
+      "p_approx": "<0.05",
+      "significant": true
+    },
+    "dead_exhausts_ci_includes_0": false,
+    "at_true_45_only": "CROSS-WHITE not significant (CI includes 0). 45° is NOT the pre-registered primary. Mean OOD is.",
+    "gnd_stamp": "Thoth 2026-10-07 16:30 SAST — confirmed from 40 seed files on Lenovo ThinkCentre M710q"
+  }
+}

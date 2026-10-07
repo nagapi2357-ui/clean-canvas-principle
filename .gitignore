@@ -1,0 +1,19 @@
+# Model weights (large binary files — run scripts to reproduce)
+train_weights/
+clean_weights/
+B_weights/
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+
+# macOS
+.DS_Store
+
+# Temp files
+/tmp/
+*.log

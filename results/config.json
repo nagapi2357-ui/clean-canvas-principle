@@ -1,0 +1,37 @@
+{
+  "protocol": "exp3a-v1.2-frozen",
+  "epochs": 50,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "noise_std": 0.05,
+  "seeds": [
+    42,
+    137,
+    2357,
+    1729,
+    8191
+  ],
+  "backup_seed": 31337,
+  "ood_rotations": [
+    30,
+    45,
+    60
+  ],
+  "num_workers": 2,
+  "b_seed_offsets": {
+    "cifar": 1000,
+    "fmnist": 2000,
+    "random": 3000,
+    "dead": 4000
+  },
+  "arms": [
+    "WHITE",
+    "PINK",
+    "CROSS-EXHAUST",
+    "SAME-EXHAUST",
+    "RANDOM-LABEL-EXHAUST",
+    "SHUFFLED-EXHAUST",
+    "DEAD-EXHAUST"
+  ]
+}

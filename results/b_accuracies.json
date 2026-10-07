@@ -1,0 +1,17 @@
+{
+  "B_cifar_seed42": 0.8299,
+  "B_fmnist_seed42": 0.9346,
+  "B_random_seed42": 0.0961,
+  "B_cifar_seed137": 0.8277,
+  "B_fmnist_seed137": 0.933,
+  "B_random_seed137": 0.1041,
+  "B_cifar_seed2357": 0.8288,
+  "B_fmnist_seed2357": 0.9344,
+  "B_random_seed2357": 0.1035,
+  "B_cifar_seed1729": 0.8206,
+  "B_fmnist_seed1729": 0.9329,
+  "B_random_seed1729": 0.0986,
+  "B_cifar_seed8191": 0.83,
+  "B_fmnist_seed8191": 0.9315,
+  "B_random_seed8191": 0.0948
+}
